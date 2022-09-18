@@ -112,6 +112,7 @@ body {
   overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  text-align: center;
 }
 .trust-signals::-webkit-scrollbar {
   display: none;
