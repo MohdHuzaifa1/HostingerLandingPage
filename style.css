@@ -47,7 +47,6 @@ body {
   text-align: center;
 }
 .hero-container {
-  max-width: 400px;
   display: block;
   margin: 0 auto;
 }
@@ -107,12 +106,13 @@ body {
   background: #fff;
 }
 .trust-signals {
+  display: block;
+  margin: 0 auto;
   padding: 10px;
   display: flex;
   overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  text-align: center;
 }
 .trust-signals::-webkit-scrollbar {
   display: none;
@@ -138,4 +138,62 @@ body {
   margin: 5px 0;
   color: #727586;
   font-weight: 600;
+}
+.home-pricing-table-plan {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 15px auto ;
+}
+.home-pricing-table-plan-header {
+  width: 100%;
+  padding: 15px 20px;
+  background: #673DE6;
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
+.home-pricing-table-plan-main {
+  width: 80%;
+  margin: 0 auto;
+}
+.home-pricing-table-plan-pricing {
+  width: 100%;
+  margin: 15px auto;
+}
+.home-pricing-table-plan-pricing .hero-pricing {
+  margin-bottom: -10px;
+}
+.home-pricing-table-plan-pricing-renewal {
+  color: #2F1C6A;
+  font-weight: 800;
+}
+.home-pricing-table-plan-selectBtn {
+  width: 100%;
+  margin: 15px auto 10px auto;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background: #673DE6;
+  color: white;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+.home-pricing-table-plan-features h3 {
+  color: #2f1C6a;
+  font-weight: 800;
+  font-size: 23px;
+  margin: 10px 0 20px 0;
+}
+.plan-features-list {
+  width: 100%;
+  position: relative;
+  left: -40px;
+}
+.plan-features-item {
+  text-align: left;
+  list-style: none;
+}
+.plan-features-item::before {
+  content: '✔';
 }
