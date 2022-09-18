@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+.header {
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  padding: 10px 15px;
+  background: #673de6;
+  position: relative;
+}
+.header .logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn-group {
+  height: 100%;
+  float: right;
+}
+.header button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+.header button img {
+  position: relative;
+  top: 3px;
+}
+.section {
+  width: 100vw;
+}
+.hero-section {
+  background: url(https://assets.hostinger.com/images/sales/summerSale2022v2/header/header-bg-xs@2x-0e4b9a7de4.png);
+  background-size: cover;
+  padding: 20px 25px;
+  text-align: center;
+}
+.hero-container {
+  display: block;
+  margin: 0 auto;
+}
+.hero-heading {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+}
+.hero-pricing {
+  color: white;
+  text-align: center;
+  font-size: 58px;
+  font-weight: 800;
+  margin: 10px 0px;
+}
+.hero-pricing sup {
+  position: relative;
+  top: -10px;
+  font-size: 18px;
+}
+.hero-pricing span {
+  position: relative;
+  left: -12px;
+  font-size: 21px;
+}
+.hero-description {
+  margin: 5px;
+  color: white;
+}
+.hero-btn {
+  width: 250px;
+  margin: 15px;
+  border: none;
+  border-radius: 30px;
+  padding: 16px 30px;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: white;
+  background: #FC5185;
+}
+.hero-guarantee {
+  margin: 10px 0;
+  color: white;
+}
+.hero-guarantee span {
+  color: limegreen; 
+  font-size: 19px; 
+  font-weight: 700; 
+  position: relative; 
+  top: 3px; 
+  margin-right: 3px;
+}
+.trust-signals-section {
+  padding: 15px 20px;
+  background: #fff;
+}
+.trust-signals {
+  padding: 10px;
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.trust-signals::-webkit-scrollbar {
+  display: none;
+}
+.trust-signals img {
+  margin: 0 20px;
+}
+.pricing-table-section {
+  padding: 10px 0;
+}
+.pricing-table-container {
+  padding: 0 20px;
+  text-align: center;
+}
+.pricing-table-container h2 {
+  text-align: center;
+  font-size: 27px;
+  font-weight: 800;
+  color: #2F1C6A;
+  margin-bottom: 10px;
+}
+.pricing-table-subtitle {
+  margin: 5px 0;
+  color: #727586;
+  font-weight: 600;
+}
