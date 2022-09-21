@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +8,17 @@
   box-sizing: border-box;
   transition: all 0.5s;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Mulish", sans-serif;
 }
+
 .header {
   width: 100vw;
   min-width: 100vw;
@@ -21,16 +28,19 @@ body {
   display: grid;
   position: relative;
 }
+
 .header #logo {
   width: 150px;
   vertical-align: middle;
 }
+
 .btn-group {
   position: absolute;
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
 }
+
 .header button {
   background: transparent;
   border: none;
@@ -38,29 +48,35 @@ body {
   color: white;
   margin: 0 5px;
 }
+
 .header button img {
   position: relative;
   top: 3px;
 }
+
 .section {
   width: 100vw;
 }
+
 .hero-section {
   background: url(https://assets.hostinger.com/images/sales/summerSale2022v2/header/header-bg-xs@2x-0e4b9a7de4.png);
   background-size: cover;
   padding: 20px 25px;
   text-align: center;
 }
+
 .hero-container {
   display: block;
   margin: 0 auto;
 }
+
 .hero-heading {
   color: white;
   text-align: center;
   font-weight: 700;
   font-size: 28px;
 }
+
 .hero-pricing {
   color: white;
   text-align: center;
@@ -68,19 +84,23 @@ body {
   font-weight: 800;
   margin: 10px 0px;
 }
+
 .hero-pricing sup {
   position: relative;
   top: -10px;
   font-size: 18px;
 }
+
 .hero-pricing span {
   position: relative;
   font-size: 21px;
 }
+
 .hero-description {
   margin: 5px;
   color: white;
 }
+
 .hero-btn {
   width: 250px;
   margin: 15px;
@@ -93,22 +113,26 @@ body {
   color: white;
   background: #FC5185;
 }
+
 .hero-guarantee {
   margin: 10px 0;
   color: white;
 }
+
 .hero-guarantee span {
-  color: limegreen; 
-  font-size: 19px; 
-  font-weight: 700; 
-  position: relative; 
-  top: 3px; 
+  color: limegreen;
+  font-size: 19px;
+  font-weight: 700;
+  position: relative;
+  top: 3px;
   margin-right: 3px;
 }
+
 .trust-signals-section {
   padding: 15px 20px;
   background: #fff;
 }
+
 .trust-signals {
   display: block;
   margin: 0 auto;
@@ -118,21 +142,26 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .trust-signals::-webkit-scrollbar {
   display: none;
 }
+
 .trust-signals img {
   margin: 0 20px;
 }
+
 .pricing-table-section {
   padding: 10px 0;
 }
+
 .pricing-table-container {
   max-width: 800px;
   padding: 0 20px;
   margin: 0 auto;
   text-align: center;
 }
+
 .pricing-table-container h2 {
   text-align: center;
   font-size: 27px;
@@ -140,17 +169,20 @@ body {
   color: #2F1C6A;
   margin-bottom: 10px;
 }
+
 .pricing-table-subtitle {
   margin: 5px 0;
   color: #727586;
   font-weight: 600;
 }
+
 .home-pricing-table-plan {
   width: 95%;
   border: 1px solid #787586;
   border-radius: 9px;
-  margin: 15px auto ;
+  margin: 15px auto;
 }
+
 .home-pricing-table-plan-header {
   width: 100%;
   padding: 15px 20px;
@@ -158,21 +190,26 @@ body {
   border-radius: 9px 9px 0 0;
   color: white;
 }
+
 .home-pricing-table-plan-main {
   width: 90%;
   margin: 0 auto;
 }
+
 .home-pricing-table-plan-pricing {
   width: 100%;
   margin: 15px auto;
 }
+
 .home-pricing-table-plan-pricing .hero-pricing {
   margin-bottom: -10px;
 }
+
 .home-pricing-table-plan-pricing-renewal {
   color: #2F1C6A;
   font-weight: 800;
 }
+
 .home-pricing-table-plan-selectBtn {
   width: 100%;
   margin: 15px auto 10px auto;
@@ -186,18 +223,21 @@ body {
   font-weight: 700;
   letter-spacing: 0.4px;
 }
+
 .home-pricing-table-plan-features h3 {
   color: #2f1C6a;
   font-weight: 800;
   font-size: 23px;
   margin: 10px 0 20px 0;
 }
+
 .home-pricing-table-plan-features-list {
   width: 100%;
   padding: 0 20px;
   display: grid;
   grid-template-columns: 1fr;
 }
+
 .plan-features-item {
   text-align: left;
   margin: 5px 0;
@@ -206,45 +246,55 @@ body {
   color: #2F1C6A;
   list-style-image: url(https://assets.hostinger.com/images/index-new/check-82319b207b.svg);
 }
+
 .home-pricing-table-plan-additional-features {
   display: none;
 }
+
 .home-pricing-table-plan-additional-features.active {
   display: block;
 }
+
 .home-pricing-table-plan-footer {
   margin-top: 20px;
   padding: 15px 20px;
   border-radius: 0 0 6px 6px;
   border: 1px solid #787586;
 }
+
 .home-pricing-table-plan-footer a {
   color: #673DE6;
 }
+
 .services-wrapper {
   width: 95%;
   margin: 20px auto;
 }
-.services-wrapper > h2:first-child {
+
+.services-wrapper>h2:first-child {
   font-size: 28px;
   color: #2F1C6A;
   font-weight: 800;
   margin-bottom: 15px;
   text-align: center;
 }
+
 .services-container {
   width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
 }
+
 .service {
   width: 100%;
   margin: 0 auto 10px auto;
 }
+
 .service-image {
   vertical-align: middle;
 }
+
 .service-name {
   vertical-align: middle;
   font-size: 21px;
@@ -252,20 +302,24 @@ body {
   color: #2F1C6A;
   margin-left: 10px;
 }
+
 .domain-section {
   padding: 40px 20px;
   background: #F4F5FF;
 }
+
 .domain-container {
   padding: 0 15px;
 }
-.domain-section > .domain-container > h2:first-child {
+
+.domain-section>.domain-container>h2:first-child {
   font-size: 29px;
   font-weight: 800;
   color: #2F1C6A;
   margin: 0 auto;
   text-align: center;
 }
+
 .domain-subtitle {
   max-width: 425px;
   font-size: 16px;
@@ -273,6 +327,7 @@ body {
   color: #2f1C6A;
   text-align: center;
 }
+
 .domain-search {
   width: 100%;
   max-width: 500px;
@@ -288,6 +343,7 @@ body {
   border: 1px solid #787586;
   outline: none;
 }
+
 .domain-search-btn {
   width: 100%;
   max-width: 500px;
@@ -301,34 +357,81 @@ body {
   color: white;
   font-size: 19px;
   font-weight: 700;
- }
- .domain-search-btn:disabled {
-   background: #787586;
- }
- .testimonial-section {
-   padding: 30px 15px;
- }
- .testimonial-container {
-   margin: 0 auto;
-   padding: 0 15px;
- }
- .testimonial > p:first-child {
-   font-weight: 800;
-   font-size: 15px;
-   text-align: center;
-   letter-spacing: 2px;
-   text-transform: uppercase;
-   margin: 0 auto;
-   color: #787586;
- }
+}
+
+.domain-search-btn:disabled {
+  background: #787586;
+}
+
+.testimonial-section {
+  padding: 30px 15px;
+}
+
+.testimonial-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.testimonial {
+  padding: 30px 0;
+}
+
+.testimonial-sub-heading {
+  font-weight: 800;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  color: #787586;
+}
+
+.testimonial-heading {
+  text-align: center;
+  margin: 10px auto;
+  color: #2f1C6A;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.testimonial-description {
+  max-width: 425px;
+  margin: 15px auto;
+  text-align: center;
+  color: #787586;
+}
+
+.testimonial-learn-more {
+  display: block;
+  margin: 0 auto;
+  color: #2F1C6A;
+  font-size: 16px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.testimonial-learn-more:hover,
+.testimonial-learn-more:active {
+  color: #673DE6;
+}
+
+.testimonial-image {
+  display: block;
+  width: 100%;
+  max-width: 510px;
+  margin: 30px auto 0 auto;
+}
+
 @media only screen and (min-width: 768px) {
   .home-pricing-table-plan-features-list {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
   }
+
   .services-container {
     grid-template-columns: 1fr 1fr;
   }
+
   .services-wrapper {
     width: 80%;
   }
