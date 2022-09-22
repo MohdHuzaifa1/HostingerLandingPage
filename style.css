@@ -175,6 +175,7 @@ body {
 
 .pricing-table-subtitle {
   max-width: 425px;
+  text-align: center;
   margin: 5px 0;
   color: #727586;
   font-weight: 600;
