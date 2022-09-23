@@ -60,16 +60,18 @@ var html = `<li class="plan-features-item"><b>Unlimited</b> Free SSL</li>
 window.addEventListener('scroll', scroll);
 
 function scroll() {
-  if (window.scrollY > 25) {
-    header.classList.add('active');
-    logo.src = 'images/logo-black.svg';
-    cartBtn.src = 'images/shopping_cart-black.svg';
-    menuBtn.src = 'images/menu-black.svg';
-  } else if (window.scrollY < 25) {
-    header.classList.remove('active');
-    logo.src = 'images/logo-white.svg';
-    cartBtn.src = 'images/shopping_cart.svg';
-    menuBtn.src = 'images/menu.svg';
+  if (!nav.classList.contains('active')) {
+    if (window.scrollY > 25) {
+      header.classList.add('active');
+      logo.src = 'images/logo-black.svg';
+      cartBtn.src = 'images/shopping_cart-black.svg';
+      menuBtn.src = 'images/menu-black.svg';
+    } else if (window.scrollY < 25) {
+      header.classList.remove('active');
+      logo.src = 'images/logo-white.svg';
+      cartBtn.src = 'images/shopping_cart.svg';
+      menuBtn.src = 'images/menu.svg';
+    }
   }
 }
 
