@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -61,8 +61,75 @@ body {
 }
 
 .header button img {
+  width: 24px;
+  height: 24px;
   position: relative;
   top: 3px;
+}
+
+.nav {
+  width: 100vw;
+  height: calc(100vh - 64px);
+  background: #fff;
+  position: fixed;
+  top: 64px;
+  z-index: 101;
+  display: none;
+}
+
+.nav.active {
+  display: block;
+}
+
+.dropdown-container {
+  width: 100%;
+}
+
+.dropdown {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgb(218, 220, 224);
+}
+
+.dropdown:last-child {
+  border-bottom: 1px solid rgb(218, 220, 224);
+}
+
+.dropdown > span {
+  font-size: 20px;
+  font-weight: 800;
+  color: #2F1C6A;
+  vertical-align: middle;
+}
+
+.dropdown img {
+  width: 24px;
+  vertical-align: middle;
+  float: right;
+  transform-origin: center;
+}
+
+.dropdown img.active {
+  transform: rotate(180deg);
+}
+
+.sub-dropdown-container {
+  background: #f4f5ff;
+  display: none;
+}
+
+.sub-dropdown {
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 20px;
+  color: #2F1C6A;
+  font-size: 18px;
+  font-weight: 700;
+  border-top: 1px solid rgb(218, 220, 224);
+  border-bottom: 1px solid rgb(218, 220, 224);
+}
+
+.sub-dropdown-container.active {
+  display: block;
 }
 
 .section {
@@ -630,6 +697,33 @@ ul.folder-list>li>a:active {
   color: #673DE6;
 }
 
+.social-icon-container {
+  max-width: 300px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.copyright {
+  width: 100%;
+  padding: 15px 0;
+  border-top: 1px solid rgba(140,133,255,0.2);
+  font-weight: 300;
+}
+
+.copyright p {
+  margin: 0 auto;
+  text-align: center;
+  color: #2F1C6A;
+}
+
 @media only screen and (min-width: 768px) {
   .trust-signals {
     display: grid-block;
@@ -694,5 +788,10 @@ ul.folder-list>li>a:active {
   
   .folder-list-container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .social-icon img {
+    display: inline;
+    margin: 0;
   }
 }
