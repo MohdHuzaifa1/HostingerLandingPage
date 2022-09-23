@@ -132,6 +132,37 @@ body {
   display: block;
 }
 
+.login-btn {
+  width: 90%;
+  max-width: 320px;
+  background-color: transparent;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 800;
+  color: #673DE6;
+  padding: 15px 20px;
+  border: 2px solid #673DE6;
+}
+
+.login-btn::before {
+  content: '\e897';
+  font-family: "Material Icons";
+  vertical-align: middle;
+  font-size: 20px;
+  color: #673DE6;
+  position: relative;
+  left: -10px;
+  transition: all 0.5s;
+}
+
+.login-btn:hover,
+.login-btn:hover::before{
+  background: #673DE6;
+  color: #FFFFFF;
+}
+
 .section {
   width: 100vw;
   position: relative;
