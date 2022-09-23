@@ -1,4 +1,5 @@
 const logo = document.getElementById('logo');
+const nav = document.getElementsByClassName('nav')[0];
 const header = document.getElementsByClassName('header')[0];
 const cartBtn = document.getElementById('cart');
 const menuBtn = document.getElementById('menu');
