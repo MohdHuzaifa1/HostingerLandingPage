@@ -102,28 +102,28 @@ function timer() {
   const minuteTimer = document.getElementById('minutes');
   const secondTimer = document.getElementById('seconds');
 
-  var saleEndingDate = new Date('27 September 2022').getTime();
-  var now = new Date().getTime();
+  var saleEndingDate = new Date('25 September 2022');
+  var now = new Date();
   var timeLeft = saleEndingDate - now;
 
   if (timeLeft > 0) {
-    var days = Math.floor(timeLeft / 86400000);
+    var days = Math.floor(timeLeft/1000/60/60/24);
     if (days == 0) {
-      var hours = Math.floor(timeLeft / 3600000);
+      var hours = Math.floor(timeLeft/1000/60/60);
     } else {
-      var hours = Math.floor((timeLeft / 3600000) % (days * 24));
+      var hours = Math.floor(timeLeft/1000/60/60) % (days*24);
     }
-    if (days == 0 && hours == 0) {
-      var minutes = Math.floor(timeLeft / 60000);
+    if (hours == 0) {
+      var minutes = Math.floor(timeLeft/1000/60);
     } else {
-      var minutes = Math.floor((timeLeft / 60000) % (hours * 60));
+      var minutes = Math.floor(timeLeft/1000/60)%Math.floor(timeLeft/1000/60/60);
     }
     if (days == 0 && hours == 0 && minutes == 0) {
       var seconds = Math.floor(timeLeft / 1000);
     } else {
-      var seconds = Math.floor((timeLeft % (1000 * 60) / 1000));
+      var seconds = Math.floor(timeLeft/1000)%Math.floor(timeLeft/1000/60);
     }
-
+    
     dayTimer.innerHTML = addZeros(days);
     hourTimer.innerHTML = addZeros(hours);
     minuteTimer.innerHTML = addZeros(minutes);
