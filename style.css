@@ -27,7 +27,17 @@ body {
   background: #673de6;
   display: grid;
   position: fixed;
-  z-index: 100;
+  z-index: 101;
+}
+
+.header.active {
+  padding: 20px 30px;
+  background: #f4f5ff;
+  border-bottom: 1px solid #2f1C6A;
+}
+
+.header.active #logo {
+  width: 120px;
 }
 
 .header #logo {
@@ -69,6 +79,7 @@ body {
 }
 
 .hero-container {
+  max-width: 400px;
   display: block;
   margin: 0 auto;
 }
@@ -104,6 +115,47 @@ body {
   color: white;
 }
 
+.hero-countdown {
+  width: 300px;
+  margin: 15px auto 15px auto;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.timer {
+  width: 60px;
+  max-width: 80px;
+  padding: 18px;
+  font-size: 19px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.timer::after {
+  content: attr(id);
+  position: absolute;
+  bottom: -18px;
+  right: 12.5px;
+  color: #fff;
+  text-transform: lowercase;
+  font-size: 14px;
+}
+
+.timer:nth-child(5)::after,
+.timer:nth-child(7)::after {
+  right: 4px;
+}
+
+.hero-countdown > span {
+  color: #787586;
+  font-size: 20px;
+  font-weight: 800;
+  vertical-align: middle;
+}
+
 .hero-btn {
   width: 250px;
   margin: 15px;
@@ -137,7 +189,7 @@ body {
 }
 
 .trust-signals {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   padding: 10px;
   display: flex;
@@ -174,16 +226,16 @@ body {
 }
 
 .pricing-table-subtitle {
-  max-width: 425px;
   text-align: center;
-  margin: 5px 0;
+  max-width: 425px;
+  margin: 5px auto;
   color: #727586;
   font-weight: 600;
 }
 
 .home-pricing-table-plan {
   width: 95%;
-  border: 1px solid #787586;
+  border: 1px solid #0005;
   border-radius: 9px;
   margin: 15px auto;
 }
@@ -264,7 +316,7 @@ body {
   margin-top: 20px;
   padding: 15px 20px;
   border-radius: 0 0 6px 6px;
-  border: 1px solid #787586;
+  border: 1px solid #0005;
 }
 
 .home-pricing-table-plan-footer a {
@@ -345,7 +397,7 @@ body {
   background: #fff;
   font-size: 16px;
   text-align: center;
-  border: 1px solid #787586;
+  border: 1px solid #0005;
   outline: none;
 }
 
@@ -513,10 +565,13 @@ body {
 }
 
 .footer-container {
+  max-width: 800px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .footer-description {
+  font-size: 15px;
   margin: 5px 0;
   color: #2F1C6A;
 }
@@ -532,13 +587,18 @@ li.footer-payment {
   margin: 5px;
 }
 
+.folder-list-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .folder-list-box {
   margin-bottom: 20px;
 }
 
 .folder-title {
   position: sticky;
-  top: 50px;
+  top: 64px;
   background: #F4F5FF;
   padding: 5px 0;
   margin: 5px auto;
@@ -546,6 +606,7 @@ li.footer-payment {
   font-size: 21px;
   font-weight: 800;
   text-transform: uppercase;
+  z-index: 100;
 }
 
 ul.folder-list {
@@ -554,9 +615,11 @@ ul.folder-list {
 
 ul.folder-list>li {
   margin: 10px 0;
+  font-size: 15px;
 }
 
-ul.folder-list > li > a {
+.folder-link {
+  font-size: 15px;
   font-weight: 500;
   color: #2F1C6A;
   text-decoration: none;
@@ -568,6 +631,11 @@ ul.folder-list>li>a:active {
 }
 
 @media only screen and (min-width: 768px) {
+  .trust-signals {
+    display: grid-block;
+    justify-content: space-around;
+  }
+  
   .home-pricing-table-plan-features-list {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
@@ -579,5 +647,52 @@ ul.folder-list>li>a:active {
 
   .services-wrapper {
     width: 80%;
+  }
+  
+  .testimonial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+  
+  .testimonial-details {
+    position: relative;
+  }
+  
+  .testimonial:nth-child(even) .testimonial-details {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  
+  .testimonial-details-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .control-panel-section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    position: relative;
+  }
+  
+  .control-panel-container {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  
+  .control-panel-container * {
+    text-align: left;
+  }
+  
+  .panel-image {
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .folder-list-container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
