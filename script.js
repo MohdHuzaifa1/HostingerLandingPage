@@ -111,7 +111,7 @@ function timer() {
     if (days == 0) {
       var hours = Math.floor(timeLeft/1000/60/60);
     } else {
-      var hours = Math.floor(timeLeft/1000/60/60) % (days*24);
+      var hours = Math.floor(timeLeft/1000/60/60) % Math.floor(timeLeft/1000/60/60/24);
     }
     if (hours == 0) {
       var minutes = Math.floor(timeLeft/1000/60);
