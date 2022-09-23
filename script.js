@@ -6,6 +6,7 @@ const ul = document.getElementsByClassName('home-pricing-table-plan-features-lis
 const expandMoreFeatures = document.getElementById('expandMoreFeatures');
 var li = document.getElementsByClassName('plan-features-item');
 var expand = false;
+var closed = true;
 var html = `<li class="plan-features-item"><b>Unlimited</b> Free SSL</li>
                 <li class="plan-features-item"><b>Free</b> domain</li>
                 <li class="plan-features-item"><b>Free</b> email</li>
@@ -70,6 +71,29 @@ function scroll() {
     cartBtn.src = 'images/shopping_cart.svg';
     menuBtn.src = 'images/menu.svg';
   }
+}
+
+function toggleNav() {
+  var nav = document.getElementsByClassName('nav')[0];
+  var header = document.getElementsByClassName('header')[0];
+  if (nav.classList.contains('active')) {
+    nav.classList.toggle('active');
+    header.classList.add('active');
+    logo.src = 'images/logo-black.svg';
+    menuBtn.src = 'images/menu-black.svg';
+    cartBtn.src = 'images/shopping_cart-black.svg';
+  } else {
+    nav.classList.toggle('active');
+    header.classList.add('active');
+    logo.src = 'images/logo-black.svg';
+    menuBtn.src = 'images/menu-close.svg';
+    cartBtn.src = 'images/shopping_cart-black.svg';
+  }
+}
+
+function openDropdown(element, element2) {
+    document.getElementById(element).classList.toggle('active');
+    document.querySelector(`#${element2} img`).classList.toggle('active');
 }
 
 function timer() {
