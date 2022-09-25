@@ -257,6 +257,8 @@ body {
   display: none;
 }
 .trust-signals img {
+  min-width: 137px;
+  max-width: 219px;
   margin: 0 20px;
 }
 .pricing-table-section {
@@ -380,6 +382,7 @@ body {
   margin: 0 auto 10px auto;
 }
 .service-image {
+  width: 42px;
   vertical-align: middle;
 }
 .service-name {
@@ -489,6 +492,7 @@ body {
 .testimonial-image {
   display: block;
   width: 100%;
+  min-width: 330px;
   max-width: 510px;
   margin: 30px auto 0 auto;
 }
@@ -512,6 +516,7 @@ body {
   margin: 30px auto;
 }
 .panel-feature img {
+  width: 24px;
   display: block;
   margin: 10px auto;
 }
