@@ -105,7 +105,7 @@ function timer() {
   const minuteTimer = document.getElementById('minutes');
   const secondTimer = document.getElementById('seconds');
 
-  var saleEndingDate = new Date('25 September 2022');
+  var saleEndingDate = new Date('02 October 2022');
   var now = new Date();
   var timeLeft = saleEndingDate - now;
 
